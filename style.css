@@ -137,6 +137,11 @@ main article {
     text-align: center;
 }
 
+textarea {
+    width: 40%;
+    height: 100px;
+}
+
 hr {
     border: 1px solid black;
 }
