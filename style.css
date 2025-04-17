@@ -200,6 +200,10 @@ footer {
     font-size: 80%;
 }
 
+footer a {
+    color: white;
+}
+
 @media only screen and (max-width: 1025px) {
     #homeimg {
         display: none;
