@@ -8,7 +8,7 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 125px 50px auto 20px;
+    grid-template-rows: 125px 50px auto 45px;
 }
 
 header {
@@ -91,7 +91,7 @@ span {
 }
 
 main {
-    grid-row: 3 / 6;
+    grid-row: 3 / 4;
     grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -191,7 +191,7 @@ hr {
 }
 
 footer {
-    grid-row: 2 / 3;
+    grid-row: 4 / 5;
     grid-column: 1 / span 12;
     background-color: black;
     color: white;
