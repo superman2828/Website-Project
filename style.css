@@ -114,10 +114,15 @@ main article {
 }
 
 #buildingarticle {
-    grid-column: 1 / span 8;
+    grid-column: 1 / span 9;
     grid-row: 1 / span 1;
     padding: 0px 20px 20px 20px;
     font-family: 'JetBrains Mono';
+}
+
+#buildingarticle ul {
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 #troubleshooting {
