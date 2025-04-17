@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PC Building</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains%20Mono' rel='stylesheet' type="text/css">            <!-- font taken from w3schools --> 
+</head>
+<body>
+    
+    <header>
+            
+        <img src="cpu2.png" alt="CPU">
+        <h1><a href=index.html>PC Building</a></h1>
+        
+    </header>
+
+
+    <nav id="nav">
+        <ul>
+            <li><a href="tools.html">TOOLS</a></li>
+            <li><a href="maincomp.html">MAIN COMPONENTS</a></li>
+            <li><a href="othercomp.html">OTHER COMPONENTS</a></li>
+            <li><a href="building.html">BUILDING PROCESS</a></li>
+            <li><a href="troubleshooting.html"><span>TROUBLESHOOTING</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <article>
+            
+            <div id="troubleshooting">
+            <h2>Troubleshooting / FAQ</h2>
+            <p><b>Why won't my PC turn on after I finished building it? </b>This is one of the most common issues first-time builders run into. If your PC won’t power on at all—no fans spinning, no lights turning on—the issue is usually power-related. First, double-check that the power supply is switched on (look for the “|” symbol on the back). Then make sure the 24-pin motherboard power cable and the 8-pin CPU power cable are securely connected. These are often the most commonly missed. Also, ensure that your power button header is correctly connected to the motherboard—those tiny front panel connectors are easy to mix up. Lastly, try plugging the PC directly into a wall outlet (not a power strip), and make sure the outlet itself is working. Don’t worry—this is a normal hiccup, and it’s usually an easy fix once you methodically check each connection.</p><br><hr><br>
+            <p><b>My PC turns on, but there’s no display on my monitor. What’s wrong? </b>If your PC powers on but nothing shows up on the monitor, there are a few possible culprits. First, make sure your monitor is turned on and the input source matches the cable you're using (HDMI, DisplayPort, etc.). If you’re using a dedicated graphics card, make sure your monitor is plugged into the GPU, not the motherboard’s display port. If your CPU doesn’t have integrated graphics and you didn’t install a GPU, you won’t get any signal. Double-check that your RAM is properly seated—try removing it and reseating it or testing one stick at a time. Also, verify that your GPU is clicked in all the way and powered (if it needs external power connectors). It may take some trial and error, but walking through each of these steps should lead you to the fix.</p><br><hr><br>
+            <p><b>My fans are spinning, but I’m not getting any picture or beeps. What could be wrong? </b>This usually means your motherboard is powering on, but it's not completing the boot process. Start by checking your RAM—improperly seated memory or incompatible sticks are a frequent cause. Try booting with just one stick of RAM installed in the correct slot (check your motherboard manual for the right one). Next, make sure your CPU is installed properly and doesn’t have any bent pins (for AMD) or contact issues (for Intel). Also, check if your motherboard has debug LEDs or a small speaker to indicate error codes—they can point you directly to the faulty component. In some cases, a BIOS update may be needed, especially if you're using a newer CPU with an older motherboard.</p><br><hr><br>
+            <p><b>How do I know if my power supply is working properly? </b>If you suspect your power supply might be the problem, there are a few ways to test it. First, listen and look—are the fans spinning? Are the motherboard LEDs lighting up? You can also do the "paperclip test" by jumping the green and black pins on the 24-pin cable to see if the PSU powers on (only do this with nothing else connected and be careful!). A more accurate method is using a PSU tester or a multimeter to measure voltage outputs. If you're still unsure, try swapping in another power supply (if you have access to one) to rule it out. A faulty PSU can cause random shutdowns, no power, or even damage to other components—so it’s important to be certain it’s working.</p><br><hr><br>
+            <p><b>Why is my PC turning off or restarting randomly? </b>This can be caused by overheating, power supply issues, or software problems. First, monitor your CPU and GPU temperatures using a tool like HWMonitor or Core Temp—if they’re running too hot, your system may be shutting down to protect itself. Check that your CPU cooler is mounted properly and that fans are spinning as they should. Next, consider the power supply—random restarts are often a sign of an underpowered or failing PSU. Also, make sure all your cables are firmly plugged in. If everything checks out on the hardware side, try updating your BIOS and drivers, or doing a fresh Windows install to eliminate software as the cause.</p><br><hr><br>
+            <p><b>Why is my PC running hot or loud? </b>High temperatures and loud fans usually mean poor airflow or cooling. Make sure your case fans are properly configured—intake fans in the front or bottom, exhaust fans in the back or top. Clean out dust filters and ensure that nothing is blocking air circulation inside your case. Check your CPU and GPU fans to see if they're spinning normally. If your PC is still running hot, consider upgrading your cooler or adding more case fans. Loud fans can also be caused by cheap or worn-out fan bearings, so replacing them with quieter, higher-quality fans (like Noctua or Arctic) can make a big difference. Managing your fan curves in the BIOS or with software can also help keep noise down without sacrificing cooling.</p><br><hr><br>
+            <p><b>My USB ports or front panel audio aren’t working. What did I miss? </b>This usually means a cable wasn’t connected—or was connected incorrectly. Inside your case, there are headers on the motherboard for front panel audio, USB 2.0, USB 3.0, and more. If the audio jacks or USB ports on the front of your case don’t work, open it back up and check those connections. They can be a little tricky since they often don’t “click” into place. Your motherboard manual will show exactly where each one goes. Also, double-check in BIOS and Windows that the ports are enabled and that the necessary drivers are installed. A single unplugged cable can leave multiple ports nonfunctional, so it’s worth the quick inspection.</p><br><hr><br>
+            <p><b>My system keeps crashing or blue-screening—how do I fix it? </b>Blue screens and crashes can be frustrating, but they often point to hardware or driver issues. First, make sure Windows is fully updated and that you’ve installed the latest drivers for your GPU, motherboard chipset, and any other components. Run a memory test (like Windows Memory Diagnostic or MemTest86) to check for bad RAM. If the crashes started after overclocking, try reverting to default settings. Faulty storage devices can also cause instability, so check your drive’s health using tools like CrystalDiskInfo. If you’re still having issues, check the error message on the BSOD—those codes can point you toward the exact cause.</p><br><hr><br>
+            <p><b>Why isn’t my storage drive showing up? </b>If your hard drive or SSD isn’t showing up, it could be a connection issue or a formatting problem. First, make sure the drive is properly connected with both power and data cables. Open your BIOS and see if the drive is recognized there—if it’s not, double-check your connections or try a different SATA port or power cable. If it shows up in BIOS but not in Windows, open Disk Management (search “Create and format hard disk partitions”) and see if the drive appears there. You might need to initialize or format it before it’s usable. Be careful not to format any drive that already has data on it unless you’re sure you want to erase it.</p><br><hr><br>
+            <p><b>What should I do if something just isn’t working and I can’t figure it out? </b>It’s completely normal to hit a wall during a build—especially if it’s your first time. The best thing you can do is take a step back and start checking everything one part at a time. Go through a checklist: is each component fully seated? Are all power cables connected? Have you tried clearing the CMOS or reseating the RAM? Reading your motherboard manual closely can help uncover things you might have missed. If you’re stuck, take a photo of your build and post it to an online forum like Reddit’s r/buildapc—there’s a whole community ready to help. And remember: troubleshooting is part of the learning process. Every challenge teaches you more and makes the next build even smoother.</p>
+            </div>
+        </article>
+
+        <footer>
+            <p>Site created by Nolan Earl&trade;. <a href="mailto:earlnt@mail.uc.edu">Email me here</a>. <i>IT2040 Final Project</i></p>
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>

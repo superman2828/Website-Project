@@ -1,0 +1,267 @@
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for main/other pages, AI suggestion */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 125px 50px auto 20px;
+}
+
+header {
+    grid-row: 1 / 2;
+    grid-column: 1 / span 12;
+    background-color: #3F63FF;
+}
+
+header img {
+    height: 125px;
+    width: 125px;
+    float: left;
+}
+
+header h1 {
+    font-size: 3em;
+    padding-left: 3em;
+    font-family: 'JetBrains Mono';
+    letter-spacing: .1em;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 12;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: white;
+    height: 50px;
+}
+
+#nav ul li {
+    grid-column: span 1;
+    background-color: #8a96e3;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+#nav ul li a {
+    grid-column: span 1;
+    text-decoration: none;
+    color: black;
+    font-family: 'JetBrains Mono';
+    vertical-align: middle;
+}
+
+#menu {
+    display: inline-block;
+    font-family: 'JetBrains Mono';
+    background-color: #8a96e3;
+    width: 100%;
+    position: sticky;
+    top: 15px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+span {
+    text-shadow: 2px 2px #3F63FF;
+}
+
+main {
+    grid-row: 3 / 6;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    width: 100%;
+}
+
+main article {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+#homearticle{
+    grid-column: 1/ span 8;
+    grid-row: 1 / span 1;
+    padding: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+#troubleshooting {
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+    padding: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+#troubleshooting h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+#homearticle h2,#toolsarticle h2, #maincomparticle h2 {
+    font-size: 2em;
+}
+
+#toolsarticle {
+    grid-column: 5 / span 8;
+    grid-row: 1 / span 1;
+    padding: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+#maincomparticle {
+    grid-column: 5 / span 8;
+    grid-row: 1 / span 1;
+    padding: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+#maincomparticle h3 {
+    font-size: 1.5em;
+}
+
+#homeimg {
+    grid-column: 9 / span 4;
+    grid-row: 1 / span 1;
+    padding: 50px 50px 50px 70px;
+}
+
+#toolsimg {
+    grid-column: 1/ span 4;
+    grid-row: 1 / span 1;
+    padding: 50px 70px 50px 50px;
+}
+
+#maincompimg {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+    padding: 50px 50px 50px 50px;
+}
+
+#homeimg img {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 15px;
+}
+
+#toolsimg img {
+    height: auto;
+    width: 115%;
+    position: sticky;
+    top: 15px;
+}
+
+#maincompimg img {
+    height: auto;
+    width: 100%;
+    position: sticky;
+    top: 238px;
+}
+
+footer {
+    grid-row: 2 / 3;
+    grid-column: 1 / span 12;
+    background-color: black;
+    color: white;
+    font-family: 'JetBrains Mono';
+    text-align: center;
+    font-size: 80%;
+}
+
+@media only screen and (max-width: 1025px) {
+    #homeimg {
+        display: none;
+    }
+
+    #homearticle {
+        grid-column: 1 / span 12;
+    }
+
+    #toolsarticle {
+        grid-column: 1 / span 12;
+    }
+
+    #toolsimg {
+        display: none;
+    }
+
+    #nav ul li a {
+        font-size: 80%;
+        overflow: hidden;
+    }
+
+    #menu ul li a {
+        font-size: 80%;
+        overflow: hidden
+    }
+
+    #maincompimg img {
+        top: 171px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    #maincompimg {
+        display: none;
+    }
+
+    #maincomparticle {
+        grid-column: 1 / span 12;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+
+    header h1 {
+        font-size: 2em;
+        padding-top: 21px;
+    }
+
+    #nav ul {
+        align-items: center;
+    }
+
+    #nav ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 50px;
+    }    
+
+    #nav ul li a {
+        font-size: 70%;
+    }
+}
