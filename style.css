@@ -186,6 +186,28 @@ hr {
     padding: 50px 50px 50px 50px;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #8a96e3;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: left;
+    width: 50%;
+}
+
+tr:nth-child(even) {
+    background-color: #8a96e3;
+}
+
 #homeimg img {
     height: auto;
     width: 100%;
